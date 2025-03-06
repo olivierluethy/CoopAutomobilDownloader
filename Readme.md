@@ -13,8 +13,12 @@ Eine Applikation die automatisch nach start folgende Applikationen installiert:
 
 ## Voraussetzungen
 
-1. [ADB Tools](https://developer.android.com/tools/releases/platform-tools?hl=de) muss auf Windows installiert sein.
-2. Der Heruntergeladene Ordner muss sich im **Documents** Folder im Windows befinden.
+1. Python muss installiert sein, da COOP nicht akzeptiert, dass man ADB-Tools installiert. Daher hat man das Problem mit Python gelöst, indem man ein Package das via Python installiert werden kann installiert mittels **adbutils**.
+2. Der Heruntergeladene Ordner muss sich im **Documents** Folder im Windows befinden. Allenfalls kann man den Pfad auch in der Zeile 84 variable source_dir ändern.
+3. Das Handy muss ein Android Gerät sein und USB Debugging aktiviert
+
+## Hintergrundaktivitäten
+Im Hinergrund wird bereits schon überprüft, ob die für die Ausführung dieser Packages ob sie bereits installiert wurden oder nicht. Existieren diese nicht, werden diese direkt installiert.
 
 ## Hier sind noch die Installationssourcen aufgeführt
 
